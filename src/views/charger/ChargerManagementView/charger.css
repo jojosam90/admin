@@ -1,0 +1,325 @@
+.collapsible .content {
+  background-color: #ffffff;
+  padding: 6px;
+  /*background-color: #eeeeee;*/
+}
+
+.collapsible .header {
+  background-color: #ffffff;
+  border: 1px solid;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  margin-right: 20px;
+  font-size: 16px;
+  max-width: 980px;
+  min-width: 960px;
+}
+
+.header:hover {
+  font-weight: bold;
+  /*  border: 2px solid #1d99a1; */
+}
+
+.headerRightAlign {
+  text-align: right;
+  max-width: 1100px;
+  min-width: 872px;
+}
+
+.headerAreaName {
+  max-width: 750px;
+  min-width: 750px;
+}
+
+.headerCSName {
+  max-width: 750px;
+  min-width: 750px;
+}
+
+.CSheader2 {
+  font-size: 120%;
+}
+
+.evseMenu {
+  text-align: right;
+  max-width: 160px;
+  min-width: 120px;
+  margin-left: 50px;
+}
+
+.headerAreaRightAlign,
+.headerCSRightAlign {
+  text-align: right;
+  width: 150px;
+  max-width: 200px;
+  min-width: 100px;
+  padding-left: 100px;
+}
+
+.headerCSRightAlign {
+  text-align: right;
+  width: 150px;
+  max-width: 200px;
+  min-width: 100px;
+  padding-left: 100px;
+}
+
+.header2 {
+  background-color: #ffffff;
+  /* cursor: pointer; */
+  padding-left: 10px;
+  max-width: 1020px;
+  min-width: 840px;
+}
+
+.header3 {
+  background-color: #ffffff;
+  /* cursor: pointer; */
+  margin-right: 20px;
+  max-width: 1000px;
+  min-width: 970px;
+}
+
+.chargerDetails {
+  background-color: #ffffff;
+  border: 1px solid;
+  margin-bottom: 5px;
+  padding-left: 24px;
+  padding-top: 10px;
+}
+
+.label {
+  color: black;
+}
+
+.inputNewLocation {
+  text-align: center;
+  margin-left: 80px;
+  width: 200px;
+}
+
+.flex-end {
+  text-align: right;
+}
+
+.flex-bot {
+  text-align: end;
+}
+
+.rowAlign {
+  display: flex;
+  flex-direction: row;
+}
+
+.panel {
+  border: 1px solid;
+  padding: 5px 80px 10px 10px;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+.headerPanel {
+  max-width: 1000px;
+  min-width: 820px;
+}
+.headerDir {
+  color: #72bfc5;
+  font-weight: bold;
+}
+
+.headerDirDelimiter {
+  color: #012f6b;
+  font-weight: bold;
+}
+
+.btnControl {
+  width: 94px;
+  height: 32px;
+  box-shadow: 2px 3px #888888;
+  border-radius: 6px;
+  border: 1px solid;
+  text-align: center;
+  padding: 0px;
+}
+
+.btnEvseMenu {
+  margin-top: 127px;
+  width: 40px;
+  height: 30px;
+  box-shadow: 2px 3px #888888;
+  border-radius: 6px;
+  border: 1px solid;
+  text-align: center;
+  padding: 0px;
+}
+
+.btnControlArea {
+  width: 30px;
+  height: 25px;
+  box-shadow: 1px 2px #888888;
+  border-radius: 4px;
+  border: 1px solid;
+  text-align: center;
+  padding: 0px;
+  margin-left: 10px;
+}
+
+.btnStyle2 {
+  width: 94px;
+  height: 32px;
+  box-shadow: 2px 3px #888888;
+  border-radius: 6px;
+  border: 1px solid;
+  margin-left: 600px;
+  padding-left: 0px;
+}
+
+.btnStyle3 {
+  width: 94px;
+  height: 32px;
+  box-shadow: 2px 3px #888888;
+  border-radius: 6px;
+  border: 1px solid;
+  margin-left: 20px;
+  padding: 0px;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.btnStart {
+  width: 94px;
+  height: 32px;
+  box-shadow: 2px 3px #888888;
+  border-radius: 6px;
+  border: 1px solid;
+  text-align: center;
+  padding: 0px;
+}
+
+.btnAddLocation {
+  width: 80px;
+  height: 32px;
+  /* box-shadow: 2px 3px #888888; */
+  border-radius: 6px;
+  border: 1px solid;
+  text-align: center;
+  padding: 0px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.btnStop {
+  width: 94px;
+  height: 32px;
+  box-shadow: 2px 3px #888888;
+  border-radius: 6px;
+  border: 1px solid;
+  text-align: center;
+  padding: 0px;
+}
+
+.btnControl:hover,
+.btnStyle3:hover,
+.btnStyle2:hover,
+.btnAddLocation:hover {
+  /* 86d3ff */
+  /* background: linear-gradient(#ffffff, #86d3ff); */
+  cursor: pointer;
+}
+
+.btnControlArea:hover {
+  cursor: pointer;
+}
+
+.btnStart:hover,
+.btnEvseMenu:hover {
+  /* 86d3ff */
+  /* background: linear-gradient(#ffffff, #86d3ff); */
+
+  cursor: pointer;
+}
+
+.btnControlArea:hover,
+.btnEvseMenu:hover,
+.btnControl:hover,
+.btnStyle3:hover,
+.btnStyle2:hover,
+.btnAddLocation:hover {
+  background-color: #d4d4d4;
+}
+
+.btnStop:hover {
+  /* 86d3ff */
+  /* background: linear-gradient(#ffffff, #86d3ff); */
+  cursor: pointer;
+}
+
+#evseName {
+  font-style: italic;
+  color: #6b6bcf;
+  font-weight: bold;
+}
+
+#evseAddress {
+  color: #6b6bcf;
+  font-weight: bold;
+}
+
+#evseStatus {
+  color: #28a899;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#evseInfoStyle2 {
+  /* according to design is #9ED3D7 */
+  color: #7aced4;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#newLocation:focus {
+  outline: none !important;
+  border: 1px solid rgb(116, 192, 255);
+  box-shadow: 0 0 10px rgb(156, 179, 204);
+}
+
+.mymodal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 140px;
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  overflow-y: hidden;
+}
+
+.myoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}

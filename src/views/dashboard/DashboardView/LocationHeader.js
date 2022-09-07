@@ -1,0 +1,112 @@
+import React, { useRef, useState } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import clsx from 'clsx';
+import {
+  Breadcrumbs,
+  Button,
+  Grid,
+  Link,
+  Menu,
+  MenuItem,
+  SvgIcon,
+  Typography,
+  makeStyles
+} from '@material-ui/core';
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
+import { Calendar as CalendarIcon } from 'react-feather';
+
+const timeRanges = [
+  {
+    value: 'overall',
+    text: 'Overall'
+  },
+  {
+    value: 'last_365_days',
+    text: 'Last 365 days'
+  },
+  {
+    value: 'lasy_30_days',
+    text: 'Last 30 days'
+  },
+  {
+    value: 'last_7_days',
+    text: 'Last 7 days'
+  }
+];
+
+const useStyles = makeStyles((theme) => ({
+  root: {},
+  actionIcon: {
+    marginRight: theme.spacing(1)
+  }
+}));
+
+function LocationHeader({ className, ...rest }) {
+  const classes = useStyles();
+  const actionRef = useRef(null);
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const [timeRange, setTimeRange] = useState(timeRanges[2].text);
+
+  return (
+    <Grid
+      container
+      spacing={3}
+      justify="space-between"
+      className={clsx(classes.root, className)}
+      {...rest}>
+      <Grid item>
+        <Breadcrumbs
+          separator={<NavigateNextIcon fontSize="small" />}
+          aria-label="breadcrumb">
+          {/* Location Overview */}
+          <Link
+            variant="body1"
+            color="inherit"
+            // to="/app"
+            component={RouterLink}>
+            Location Overview
+          </Link>
+          <Link
+            variant="body1"
+            color="inherit"
+            // to="/app"
+            component={RouterLink}>
+            Yishun
+          </Link>
+          {/* <Typography variant="body1" color="textPrimary">
+            Yishun
+          </Typography> */}
+        </Breadcrumbs>
+      </Grid>
+      <Grid item>
+        <Menu
+          anchorEl={actionRef.current}
+          onClose={() => setMenuOpen(false)}
+          open={isMenuOpen}
+          PaperProps={{ className: classes.menu }}
+          getContentAnchorEl={null}
+          anchorOrigin={{
+            vertical: 'bottom',
+            horizontal: 'center'
+          }}
+          transformOrigin={{
+            vertical: 'top',
+            horizontal: 'center'
+          }}>
+          {timeRanges.map((t) => (
+            <MenuItem key={t.value} onClick={() => setTimeRange(t.text)}>
+              {t.text}
+            </MenuItem>
+          ))}
+        </Menu>
+      </Grid>
+    </Grid>
+  );
+}
+
+LocationHeader.propTypes = {
+  className: PropTypes.string
+};
+
+export default LocationHeader;
